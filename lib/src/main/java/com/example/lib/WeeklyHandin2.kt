@@ -22,7 +22,10 @@ fun opgave1(){
 
 }
 fun opgave2(){
-
+    //Ikke bedt om at lave nogle objekter, så har lavet exampleobjekter til lettere navigation
+    val exampleComputer: Computer
+    val exampleLaptop: Laptop
+    val exampleSmartPhone: SmartPhone
 }
 fun opgave3(){
     val shoe1: Shoe = Shoe("Shoe", 100, 2)
