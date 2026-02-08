@@ -44,12 +44,7 @@ fun opgave4(){
     println("Triangle perimeter: ${triangleJunior.calculatePerimeter()}")
 
     //Senior solution
-    /*
-    * I Senior løsningen bliver der brugt sealed for classen, som jeg ikke helt forstår funktionen af.
-    * Kan godt lide mængden af forklarende kommentarer, hvilket giver mening i en arbejdsmessig sammenhæng
-    * Der er en validering i init constructoeren som jeg egentlig synes er ret genialt.
-    * På trods af at junior har en smule redundant kodei forhold til senior er det ellers meget ens løsninger jeg blev præseneret
-    * Jeg er mest fan af senior løsningen*/
+
     println("\n Senior solution: \n ")
     val circleSenior = CircleSenior(radius = 5.0, color = "Red", isTransparent = false)
     println("Circle area: ${circleSenior.calculateArea()}")
@@ -58,5 +53,12 @@ fun opgave4(){
     val triangleSenior = TriangleSenior(3.0, 4.0, 5.0, color = "Blue", isTransparent = true)
     println("Triangle area: ${triangleSenior.calculateArea()}")
     println("Triangle perimeter: ${triangleSenior.calculatePerimeter()}")
+
+    /* Egne kommentarer
+* I Senior løsningen bliver der brugt sealed for classen, som jeg ikke helt forstår funktionen af, men det er for at skabe hieraki igennem koden som også bidrager til en mere sikker kode.
+* Kan godt lide mængden af forklarende kommentarer, hvilket giver mening i en arbejdsmessig sammenhæng
+* Der er en validering i init constructoeren som jeg egentlig synes er ret genialt.
+* På trods af at junior har en smule redundant kodei forhold til senior er det ellers meget ens løsninger jeg blev præseneret
+* Jeg er mest fan af senior løsningen*/
 
 }
